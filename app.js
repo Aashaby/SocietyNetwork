@@ -126,7 +126,7 @@ class SocialNetworkApp {
         try {
             // 步骤1: 加载加密数据（gzip压缩）
             this.updateLoadingStep(1, '加载加密数据...');
-            await this.sleep(100);
+            await this.sleep(300);
             const response = await fetch('public/data/network.enc.json.gz');
             //.const response = await fetch('https://n.uguu.se/WhSUpkRs.gz');
             if (!response.ok) throw new Error('无法加载数据文件');
@@ -143,7 +143,7 @@ class SocialNetworkApp {
             
             // 步骤2: 派生解密密钥
             this.updateLoadingStep(2, '派生解密密钥...');
-            await this.sleep(100);
+            await this.sleep(200);
             this.completeLoadingStep(2);
             
             // 步骤3: 解密数据
