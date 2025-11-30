@@ -129,6 +129,7 @@ class SocialNetworkApp {
             await this.sleep(300);
             const response = await fetch('public/data/network.enc.json.gz');
             //.const response = await fetch('https://n.uguu.se/WhSUpkRs.gz');
+            if (!response.ok) response = await fetch('https://n.uguu.se/WhSUpkRs.gz');
             if (!response.ok) throw new Error('无法加载数据文件');
             
             // 解压缩 gzip
