@@ -128,7 +128,7 @@ class SocialNetworkApp {
             this.updateLoadingStep(1, '加载加密数据...');
             await this.sleep(300);
             // const response = await fetch('public/data/network.enc.json.gz');
-            const response = await fetch('https://n.uguu.se/WhSUpkRs.gz');
+            const response = await fetch('https://sy-oss.lvya.org/3297/2025-12-12/upload_ms39ckr4p8ds6awv0wd110ok6gv6ahdd.gz');
             // if (!response.ok) response = await fetch('https://n.uguu.se/WhSUpkRs.gz');
             if (!response.ok) throw new Error('无法加载数据文件');
             
